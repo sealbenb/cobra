@@ -1306,7 +1306,7 @@ func (c *Command) Commands() []*Command {
 func (c *Command) AddCommand(cmds ...*Command) {
 	for i, x := range cmds {
 		if cmds[i] == c {
-			panic("Command can't be a child of itself")
+			    panic("Command can't be a child of itself")
 		}
 		cmds[i].parent = c
 		// update max lengths
